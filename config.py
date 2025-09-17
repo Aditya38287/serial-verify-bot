@@ -17,8 +17,8 @@ def is_enabled(value, default):
 
 class Config(object):
     # Bot Information 
-    TECH_VJ_BOT_TOKEN = os.environ.get("TECH_VJ_BOT_TOKEN", "8086661192:AAGG_VbqrvrsVja5jzYLovHvMWhkURMKyws")
-    TECH_VJ_BOT_USERNAME = os.environ.get("TECH_VJ_BOT_USERNAME", "all_tv_serials_verify_bot") # Bot username without @.
+    TECH_VJ_BOT_TOKEN = os.environ.get("TECH_VJ_BOT_TOKEN", "8200201340:AAG7jYLjF2Hjo3Z0ZFwtqjRd8_Wk9aPKEBQ")
+    TECH_VJ_BOT_USERNAME = os.environ.get("TECH_VJ_BOT_USERNAME", "serial_verify12_bot") # Bot username without @.
     
     # The Telegram API things
     TECH_VJ_API_ID = int(os.environ.get("TECH_VJ_API_ID", "22036935"))
@@ -51,14 +51,14 @@ class Config(object):
     TECH_VJ_SESSION_NAME = "VJ-URL-UPLOADER-BOT"
     
     # database uri (mongodb)
-    TECH_VJ_DATABASE_URL = os.environ.get("TECH_VJ_DATABASE_URL", "mongodb+srv://adityapatel38287:mh6HcF6Q32QVRK5t@cluster0.c3vky.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    TECH_VJ_DATABASE_URL = os.environ.get("TECH_VJ_DATABASE_URL", "mongodb+srv://aditya1234:Aditya2463@cluster0.2bhgy7i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     TECH_VJ_MAX_RESULTS = "50"
 
     # channel information
     TECH_VJ_LOG_CHANNEL = int(os.environ.get("TECH_VJ_LOG_CHANNEL", "-1002293783983")) # your log channel id and make bot admin in log channel with full right 
     
     # if you want force subscribe then give your channel id below else leave blank
-    tech_vj_update_channel = environ.get('TECH_VJ_UPDATES_CHANNEL', '') # your update channel id and make bot admin in update channel with full right
+    tech_vj_update_channel = environ.get('TECH_VJ_UPDATES_CHANNEL', '-1002441315515') # your update channel id and make bot admin in update channel with full right
     TECH_VJ_UPDATES_CHANNEL = int(tech_vj_update_channel) if tech_vj_update_channel and id_pattern.search(tech_vj_update_channel) else None  
     
     # Url Shortner Information 
